@@ -14,3 +14,17 @@ Turns the player into an (almost) god by making them fast and able to fly.
 3. Open BepInEx/plugins.
 4. Paste PEAKGaming.dll into BepInEx/plugins.
 5. Done!
+
+## Version History
+
+### v1.2.1 
+- Fixed incorrect version histories in the plugin itself. 
+
+### v1.2.0
+- Added invincibility to all damage.
+
+### v1.0.1
+- Moved climbing patch from checking per frame to only when climbing.
+
+### v1.0.0
+- Initial Realease.
