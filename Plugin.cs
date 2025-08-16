@@ -36,7 +36,7 @@ namespace PEAKGaming
                 if (Input.GetKey(KeyCode.Space))
                 {
                     Character character = (Character)Traverse.Create(__instance).Field("character").GetValue();
-                    if (character?.IsLocal)
+                    if (character.IsLocal)
                     {
                         character.refs.view.RPC("JumpRpc", 0, [false]);
                     }
@@ -71,6 +71,15 @@ namespace PEAKGaming
             public static bool Prefix()
             {
                 return false;
+            }
+        }
+
+        [HarmonyPatch(typeof(CharacterAfflictions), "Update")]
+        public static class HealthPatch
+        {
+            public static void Prefix(CharacterAfflictions __instance)
+            {
+                Traverse.Create(__instance.character.data).Field("isInvincible").SetValue(true);
             }
         }
     }
