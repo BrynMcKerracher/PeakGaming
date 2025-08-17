@@ -7,6 +7,7 @@ Turns the player into an (almost) god by making them fast and able to fly.
  - Run faaaaaast (25m/s)
  - Hold space to fly
  - Invincible to all damage
+ - No more ragdolls when falling a large distance
 
 ## Installation (manual)
 1. Download and install BepInEx (this is required for this mod to work).
