@@ -18,6 +18,9 @@ Turns the player into an (almost) god by making them fast and able to fly.
 
 ## Version History
 
+### v1.2.2
+- Stopped the player ragdolling after a large fall.
+
 ### v1.2.1 
 - Fixed incorrect version histories in the plugin itself. 
 
