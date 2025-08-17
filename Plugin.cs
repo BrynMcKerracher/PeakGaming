@@ -44,6 +44,15 @@ namespace PEAKGaming
             }
         }
 
+        [HarmonyPatch(typeof(CharacterMovement), "FallFactor")]
+        public static class RagdollPatch
+        {
+            public static void Postfix(ref float __result)
+            {
+                __result = 0;
+            }
+        }
+
         [HarmonyPatch(typeof(CharacterClimbing), "GetRequestedPostition")]
         public static class ClimbingPatch
         {
